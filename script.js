@@ -20,7 +20,7 @@ function calculate() {
             result = num1 - num2;
             break;
         case '*':
-            result = num1 * num2;
+            result = (num1 * num2).toFixed(2);
             break;
         case '/':
             // Check for division by zero
@@ -28,7 +28,7 @@ function calculate() {
                 alert('Cannot divide by zero.');
                 return;
             }
-            result = num1 / num2;
+            result = (num1 / num2).toFixed(2);
             break;
         default:
             alert('Invalid operator. Please enter +, -, *, or /.');
